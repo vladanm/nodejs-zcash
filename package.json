@@ -1,5 +1,5 @@
 {
-  "name": "zcash",
+  "name": "node-zcash",
   "version": "0.0.5",
   "description": "zcash library for Node",
   "main": "index.js",

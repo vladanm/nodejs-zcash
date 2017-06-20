@@ -25,7 +25,7 @@ Returns a new `Zcash` instance, after reading the username and password from `HO
 ``` javascript
 const rpc = Zcash.auto();
 
-rpc.z_listaddresses().then(addresses => {
+rpc.z_listaddresses((err, addresses) => {
 	console.log(addresses);
 });
 ```
@@ -38,13 +38,13 @@ Returns a new `Zcash` instances, with the specified options.
 
 Type: `object`
 
-###### username
+###### user
 
 The RPC username.
 
 Type: `string`
 
-###### password
+###### pass
 
 The RPC password.
 
@@ -66,11 +66,11 @@ Type: `number`
 const Zcash = require("zcash");
 
 const rpc = new Zcash({
-	username: "__username__",
-	password: "__password__"
+	user: "__username__",
+	pass: "__password__"
 });
 
-rpc.z_listaddresses().then(addresses => {
+rpc.z_listaddresses((err, addresses) => {
 	console.log(addresses);
 });
 ```
