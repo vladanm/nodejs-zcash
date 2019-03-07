@@ -1,5 +1,8 @@
 {
-	"getInfo": "getinfo",
+	
+  
+  
+  "getInfo": "getinfo",
 	"getNewAddress": "getnewaddress",
 	"getBalance": "getbalance",
 	"getBlockHash": "getblockhash",
